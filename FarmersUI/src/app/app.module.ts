@@ -7,14 +7,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './component-module/home/home.module';
 import { AdminModule } from './component-module/admin/admin.module';
-import { LoginComponent } from './components/login/login/login.component';
-import { ForgotpassComponent } from './components/login/forgotpass/forgotpass.component';
+
+import { LoginModule } from './component-module/login/login.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    ForgotpassComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +20,8 @@ import { ForgotpassComponent } from './components/login/forgotpass/forgotpass.co
     BrowserAnimationsModule,
     HttpClientModule,
     HomeModule,
-    AdminModule
+    AdminModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
