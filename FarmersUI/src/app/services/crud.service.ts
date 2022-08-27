@@ -15,4 +15,20 @@ export class CRUDService {
   public getRead(): Observable<CRUD[]> {
     return this.http.get<CRUD[]>(`${environment.apiURL}/${this.url}`);
   }
+
+  public updateCrud(crud: CRUD): Observable<CRUD[]> {
+    return this.http.put<CRUD[]>(`${environment.apiURL}/${this.url}`,
+    crud
+    );
+  }
+
+  public createCrud(crud: CRUD): Observable<CRUD[]> {
+    return this.http.post<CRUD[]>(`${environment.apiURL}/${this.url}`,
+    crud
+    );
+  }
+
+  public deleteCrud(crud: CRUD): Observable<CRUD[]> {
+    return this.http.delete<CRUD[]>(`${environment.apiURL}/${this.url}/${crud.id}`);
+  }
 }

@@ -14,7 +14,7 @@ import { ForgotpassComponent } from './components/login/forgotpass/forgotpass.co
   declarations: [
     AppComponent,
     LoginComponent,
-    ForgotpassComponent,
+    ForgotpassComponent
   ],
   imports: [
     BrowserModule,
