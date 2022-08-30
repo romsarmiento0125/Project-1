@@ -8,11 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './component-module/home/home.module';
 import { AdminModule } from './component-module/admin/admin.module';
 
-import { LoginModule } from './component-module/login/login.module';
+import { LoginModule } from './component-module/login/login.module';  
 
 @NgModule({
   declarations: [
     AppComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -21,7 +22,7 @@ import { LoginModule } from './component-module/login/login.module';
     HttpClientModule,
     HomeModule,
     AdminModule,
-    LoginModule
+    LoginModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

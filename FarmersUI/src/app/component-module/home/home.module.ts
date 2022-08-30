@@ -7,8 +7,8 @@ import { HomeComponent } from 'src/app/components/home/home/home.component';
 import { MatTableModule } from '@angular/material/table'; 
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
-import { MatTreeModule } from '@angular/material/tree'; 
-import { MatIconModule } from '@angular/material/icon';
+import { CarouselModule } from 'primeng/carousel';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatTableModule,
     MatPaginatorModule,
     FormsModule,
-    MatTreeModule,
-    MatIconModule
+    CarouselModule,
+    CardModule
   ],
   exports: [
     TopnavbarComponent,

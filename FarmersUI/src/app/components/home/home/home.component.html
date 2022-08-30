@@ -1,7 +1,80 @@
-<app-topnavbar></app-topnavbar>
 <div class="home">
   <div class="container">
-    <button type="submit" class="btn btn-primary" (click)="tocreate()">Create</button>
+    <app-topnavbar></app-topnavbar>
+
+    <div class="homeTagLine">
+      <div class="box">
+        <div class="row">
+          <div class="col-12 col-md-7 globalCenterCenter">
+            <div>
+              <h1 class="t1">Eat Green Become Green</h1>
+              <p class="st">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda eligendi aut fuga
+                aperiam officia cumque reiciendis praesentium dolorem? Corrupti dolorem inventore voluptatibus enim
+                ratione, vero eveniet nemo quibusdam magni!</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Find veggies">
+                <button class="btn btn-green" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 d-none d-md-block">
+            <div class="globalCenterCenter">
+              <img src="../../../../assets/logo-etc/vegi bowl.png" class="vegPic" alt="logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bestSeller">
+      <div class="box">
+        <h2>Top Best Seller Vegetables</h2>
+        <div class="row globalCenterCenter">
+          <div class="col-3 d-none d-md-block">
+            <div class="">
+              <h2 class="m-0 t1">Find quality vegetables here</h2>
+              <h4 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi</h4>
+              <a href="#" class="btn btn-primary">See More &nbsp; <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-9 col-12">
+            <p-carousel [value]="items" [numVisible]="4" [numScroll]="4" [responsiveOptions]="responsiveOptions">
+              <ng-template let-item pTemplate="item">
+                <div class="card mx-1">
+                  <div class="globalCenterCenter">
+                    <img [src]="'assets/item/'+item.picture" class="itemPic" [alt]="item.name">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="m-0">{{item.name}}</h3>
+                    <h5 class="m-0">{{item.subDescription}}</h5>
+                    <p class="">{{item.description}}</p>
+                    <div class="row bg">
+                      <div class="col-8 globalCenterLeft">
+                        <h2 class="m-0 priceColor"><span>&#8369;</span>{{item.price}}/{{item.unit}}</h2>
+                      </div>
+                      <div class="col-4 globalCenterRight">
+                        <button type="button" class="btn btn-outline-primary"><i class="bi bi-cart"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </p-carousel>
+          </div>
+          <div class="col-10 d-block d-sm-none mt-3">
+            <div class="">
+              <h2 class="m-0 t1">Find quality vegetables here</h2>
+              <h4 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi</h4>
+              <div class="globalCenterRight">
+                <a href="#" class="btn btn-primary">See More &nbsp; <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <button type="submit" class="btn btn-primary" (click)="tocreate()">Create</button>
     <div class="my-3 border">
       <table mat-table [dataSource]="dataSource">
         <ng-container matColumnDef="Id">
@@ -19,18 +92,15 @@
             <button type="submit" class="btn btn-danger mx-2" (click)="deleteCRUD(element)">Delete</button>
           </td>
         </ng-container>
-  
+
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
-  
-      <mat-paginator
-        [pageSizeOptions]="[5, 10, 20]" 
-        showFirstLastButtons 
-        aria-label="Select page of periodic elements">
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
       </mat-paginator>
     </div>
-  
+
     <div class="my-3 p-2 border" *ngIf="cou === 'create'">
       <div class="row mb-3">
         <label for="inputEmail3" class="col-2 col-form-label">Name</label>
@@ -42,7 +112,7 @@
         <button type="submit" class="btn btn-success" (click)="createCRUD()">save</button>
       </div>
     </div>
-  
+
     <div class="my-3 p-2 border" *ngIf="cou === 'update'">
       <div class="row mb-3">
         <label class="col-2 col-form-label">Id:</label>
@@ -57,9 +127,7 @@
       <div class="d-flex justify-content-end">
         <button type="submit" class="btn btn-success" (click)="updateCRUD()">save</button>
       </div>
-    </div>
-  
+    </div> -->
+    <!-- <app-botnavbar></app-botnavbar> -->
   </div>
 </div>
-
-<app-botnavbar></app-botnavbar>

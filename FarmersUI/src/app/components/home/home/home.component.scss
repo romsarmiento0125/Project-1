@@ -1,5 +1,44 @@
 .home {
-  background-color: #f8f8f8;
+  background-image: linear-gradient(160deg, #E3EFED, #FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF);
+}
+
+.homeTagLine .box {
+  border-radius: 3%;
+  padding: 10px;
+}
+
+.homeTagLine .t1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1D3C2A;
+  margin:  12px;
+}
+
+.homeTagLine .st {
+  color: #BABCBB;
+  margin: 10px;
+}
+
+.homeTagLine .vegPic {
+  width: 85%;
+  height: 85%;
+}
+
+.bestSeller .box {
+  border-radius: 3%;
+  padding: 10px;
+}
+
+.bestSeller .itemPic {
+  width: 170px;
+  height: 165px;
+  object-fit: contain;
+}
+
+.bestSeller .t1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #55C352;
 }
 
 table {

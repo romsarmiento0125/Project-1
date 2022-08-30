@@ -1,14 +1,14 @@
-<div class="topNav">
+<div class="topNav d-md-none">
   <div class="row">
-    <div class="col-8">
+    <div class="col-7 globalCenterLeft">
       <div class="">
         <a routerLink="/">
           <img src="../../../../assets/logo-etc/LRVFA LOGO 3.png" class="topNavLogo" alt="logo">
         </a>
       </div>
     </div>
-    <div class="col-4 globalCenterRight">
-      <button type="button" class="btn btn-outline-dark" data-bs-toggle="offcanvas" data-bs-target="#sideNav">
+    <div class="offset-1 col-4 globalCenterRight">
+      <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#sideNav">
         <div class="globalCenterCenter">
           <i class="bi bi-list"></i>
         </div>
@@ -22,27 +22,46 @@
       </a>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body ocbody p-0">
-      <mat-tree class="navTree" [dataSource]="dataSource" [treeControl]="treeControl">
-        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
-          {{node.name}}
-        </mat-tree-node>
-        <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
-          <button class="btn treeBtn" mat-icon-button matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.name">
-            <div class="globalCenterCenter">
-              <mat-icon class="mat-icon-rtl-mirror">
-                {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
-              </mat-icon>
-            </div>
-          </button>
-          {{node.name}}
-        </mat-tree-node>
-      </mat-tree>
+    <div class="offcanvas-body ocbody p-0">      
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link active">Home</a>
+        <a class="nav-link">Services</a>
+        <a class="nav-link">Market</a>
+        <a class="nav-link">Blogs</a>
+        <a class="nav-link">About us</a>
+      </nav>
     </div>
     <div class="offcanvas-footer">
       <div class="d-flex globalCenterCenter">
-        <button routerLink="/login" type="button" class="btn btn-outline-primary m-2">Log in</button>
-        <button type="button" class="btn btn-primary m-2">Sign Up</button>
+        <button routerLink="/login" type="button" class="btn btn-outline-green m-2">Log in</button>
+        <button type="button" class="btn btn-green m-2">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="topNav d-none d-md-block">
+  <div class="row">
+    <div class="col-2 globalCenterLeft">
+      <div class="">
+        <a routerLink="/">
+          <img src="../../../../assets/logo-etc/LRVFA LOGO 3.png" class="topNavLogo" alt="logo">
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-7 globalCenterCenter ">
+      <nav class="nav nav-pills">
+        <a class="nav-link active">Home</a>
+        <a class="nav-link">Services</a>
+        <a class="nav-link">Market</a>
+        <a class="nav-link">Blogs</a>
+        <a class="nav-link">About us</a>
+      </nav>
+    </div>
+    <div class="col-lg-2 col-md-3 globalCenterRight">
+      <div class="d-flex">
+        <button routerLink="/login" type="button" class="btn btn-outline-green m-2 btn-sm">Log in</button>
+        <button type="button" class="btn btn-green m-2 btn-sm">Sign Up</button>
       </div>
     </div>
   </div>
