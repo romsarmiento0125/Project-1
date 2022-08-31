@@ -1,25 +1,95 @@
-.separator {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.separator::before,
-.separator::after {
-  content: '';
-  flex: 1;
-  border-bottom: 1px solid #000;
-}
-
-.separator:not(:empty)::before {
-  margin-right: .25em;
-}
-
-.separator:not(:empty)::after {
-  margin-left: .25em;
+.box {
+  padding: 10px;
 }
 
 .topNavLogo {
-  width: 30%;
-  height: 100%;
+  height: 20px;
+}
+
+.loginBody {
+  margin: 77px 0px;
+}
+
+.loginBody .t1{
+  font-size: 27px;
+  font-weight: 500;
+  color: #1F272A;
+  margin: 0px 0px;
+}
+
+.loginBody .p1{
+  font-size: 12px;
+  font-weight: 400;
+  color: #BABCBB;
+  margin: 4px 0px;
+}
+
+.loginBody .p2{
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  margin: 14px 0px 6px 0px;
+}
+
+.loginBody .p3{
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  margin: 16px 0px 6px 0px;
+}
+
+.loginBody .c1{
+  width: 17px;
+  height: 17px;
+  margin: 0px;
+}
+
+.loginBody .l1{
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0px 0px 0px 8px;
+}
+
+.loginBody .a1{
+  font-size: 15px;
+  font-weight: 400;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.promoPic {
+  width: 100%;
+  object-fit: fill;
+}
+
+.btn-password{
+  border-left: #FFFFFF;
+  --bs-btn-font-weight: 400 !important;
+  --bs-btn-color: #6c757d !important;
+  --bs-btn-bg: #FFFFFF !important;
+  --bs-btn-border-color: #ced4da !important;
+  --bs-btn-border-radius: .3rem !important;
+  --bs-btn-hover-color: #6c757d !important; //color of icon or word
+  --bs-btn-hover-bg: #FFFFFF !important;
+  --bs-btn-hover-border-color: #ced4da !important;
+  --bs-btn-focus-shadow-rgb: #FFFFFF !important; //no idea
+  --bs-btn-active-color: #6c757d !important; //when clicked
+  --bs-btn-active-bg: #FFFFFF !important;
+  --bs-btn-active-border-color:#ced4da !important;
+}
+
+.btn-google{
+  --bs-btn-font-weight: 400 !important;
+  --bs-btn-color: #000000 !important;
+  --bs-btn-bg: #FFFFFF !important;
+  --bs-btn-border-color: #000000 !important;
+  --bs-btn-border-radius: .3rem !important;
+  --bs-btn-hover-color: #6c757d !important; //color of icon or word
+  --bs-btn-hover-bg: #FFFFFF !important;
+  --bs-btn-hover-border-color: #ced4da !important;
+  --bs-btn-focus-shadow-rgb: #FFFFFF !important; //no idea
+  --bs-btn-active-color: #6c757d !important; //when clicked
+  --bs-btn-active-bg: #FFFFFF !important;
+  --bs-btn-active-border-color:#ced4da !important;
 }

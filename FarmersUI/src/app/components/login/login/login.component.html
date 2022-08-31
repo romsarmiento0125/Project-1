@@ -1,50 +1,51 @@
 <div class="">
   <div class="row">
-    <div class="col-md-6 col-12">
+    <div class="col-md-6 col-12 box">
       <div>
         <a routerLink="/">
           <img src="../../../../assets/logo-etc/LRVFA LOGO 3.png" class="topNavLogo" alt="logo">
         </a>
       </div>
-        <div>
-          <p class="globalCenterCenter">Welcome back</p>
-          <p class="globalCenterCenter">Welcome back! Please enter your details</p>
-          <div class="globalCenterCenter">
-            <button class="btn btn-outline-dark d-flex">
-              <i class="bi bi-google"></i>
-              <p>Log in with Google</p>
-            </button>
-          </div>
-          <div class="separator">or</div>
+      <div class="loginBody">
+        <div class="container">
+          <h1 class="t1 globalCenterCenter">Welcome back</h1>
+          <p class="p1 globalCenterCenter">Welcome back! Please enter your details.</p>
           <div>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <p class="p2">Email</p>
+            <input type="text" class="form-control" placeholder="Enter your email">
+            <p class="p3">Password</p>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter you password">
+              <button class="btn btn-password" type="button" id="button-addon2"><i class="bi bi-eye"></i></button>
             </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Remember information
-            </label>
+          <div class="row mt-3">
+            <div class="col-6">
+              <div class="globalCenterLeft">
+                <input class="form-check-input c1" type="checkbox">
+                <label class="l1">
+                  Remember information
+                </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="globalCenterRight">
+                <a href="#" class="a1">Forgot password</a>
+              </div>
+            </div>
           </div>
-          <div>
-            <button>Forgot password</button>
+          <div class="d-grid gap-2 col-12 mt-3">
+            <button class="btn btn-green" type="button">Button</button>
+            <button class="btn btn-google" type="button">Button</button>
           </div>
-          <div>
-            <button>Login</button>
-          </div>
-          <div>
-            <p>Don't have an account? <a>Sign up for free</a></p>
-          </div>
+
         </div>
       </div>
+    </div>
     <div class="col-6 d-none d-md-block">
       <img
         src="https://images.unsplash.com/photo-1661503271250-ea3706816770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        class="rounded mx-auto d-block img-fluid" alt="...">
+        class="promoPic" alt="...">
     </div>
   </div>
 </div>

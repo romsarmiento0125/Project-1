@@ -1,5 +1,5 @@
 .home {
-  background-image: linear-gradient(160deg, #E3EFED, #FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF);
+  background-image: linear-gradient(160deg, #E3EFED,#FFFFFF,#FFFFFF,#FFFFFF);
 }
 
 .homeTagLine .box {
@@ -7,16 +7,20 @@
   padding: 10px;
 }
 
+.homeTagLine .d1 {
+  margin: 0px;
+}
+
 .homeTagLine .t1 {
   font-size: 40px;
   font-weight: 700;
   color: #1D3C2A;
-  margin:  12px;
+  margin:  13px 0px;
 }
 
 .homeTagLine .st {
   color: #BABCBB;
-  margin: 10px;
+  margin: 13px 0px;
 }
 
 .homeTagLine .vegPic {
@@ -30,9 +34,9 @@
 }
 
 .bestSeller .itemPic {
-  width: 170px;
-  height: 165px;
-  object-fit: contain;
+  width: 100%;
+  height: 150px;
+  border-radius: 3%;
 }
 
 .bestSeller .t1 {
