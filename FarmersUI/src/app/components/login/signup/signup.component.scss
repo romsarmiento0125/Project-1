@@ -6,61 +6,56 @@
   height: 50px;
 }
 
-.loginBody {
+.signupBody {
   margin: 67px 0px;
 }
 
-.loginBody .t1{
+.signupBody .t1{
   font-size: 27px;
   font-weight: 500;
   color: #1F272A;
   margin: 0px 0px;
 }
 
-.loginBody .p1{
+.signupBody .p1{
   font-size: 12px;
   font-weight: 400;
   color: #BABCBB;
   margin: 4px 0px;
 }
 
-.loginBody .p2{
+.signupBody .p2{
   font-size: 15px;
   font-weight: 400;
   color: #000000;
   margin: 14px 0px 6px 0px;
 }
 
-.loginBody .p3{
+.signupBody .p3{
   font-size: 15px;
   font-weight: 400;
   color: #000000;
   margin: 16px 0px 6px 0px;
 }
 
-.loginBody .c1{
+.signupBody .c1{
   width: 18px;
   height: 18px;
   margin: 0px;
 }
 
-.loginBody .l1{
+.signupBody .l1{
   font-size: 15px;
   font-weight: 400;
   color: #000000;
   margin: 0px 0px 0px 8px;
 }
 
-.loginBody .a1{
+.signupBody .a1{
   font-size: 15px;
   font-weight: 400;
   color: #55C352;
   text-decoration: none;
-}
-
-.loginBody .i1{
-  width: 28px;
-  height: 28px;
 }
 
 .promoPic {
@@ -83,17 +78,3 @@
   --bs-btn-active-border-color:#ced4da !important;
 }
 
-.btn-google{
-  --bs-btn-font-weight: 400 !important;
-  --bs-btn-color: #000000 !important;
-  --bs-btn-bg: #FFFFFF !important;
-  --bs-btn-border-color: #000000 !important;
-  --bs-btn-border-radius: .3rem !important;
-  --bs-btn-hover-color: #6c757d !important; //color of icon or word
-  --bs-btn-hover-bg: #FFFFFF !important;
-  --bs-btn-hover-border-color: #ced4da !important;
-  --bs-btn-focus-shadow-rgb: #FFFFFF !important; //no idea
-  --bs-btn-active-color: #6c757d !important; //when clicked
-  --bs-btn-active-bg: #FFFFFF !important;
-  --bs-btn-active-border-color:#ced4da !important;
-}
