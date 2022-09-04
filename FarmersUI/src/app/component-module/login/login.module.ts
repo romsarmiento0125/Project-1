@@ -6,6 +6,7 @@ import { ForgotpassComponent } from '../../components/login/forgotpass/forgotpas
 import { FormsModule } from '@angular/forms';
 import { SignupComponent } from '../../components/login/signup/signup.component';  
 import { PasswordModule } from 'primeng/password';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PasswordModule } from 'primeng/password';
     CommonModule,
     AppRoutingModule,
     FormsModule,
-    PasswordModule
+    PasswordModule,
+    HttpClientModule
   ],
   exports: [
     LoginComponent,

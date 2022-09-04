@@ -12,10 +12,10 @@
           <p class="p1 globalCenterCenter">Welcome back! Please enter your details.</p>
           <div>
             <p class="p2">Email</p>
-            <input type="text" class="form-control" placeholder="Enter your email">
+            <input [(ngModel)]="user.username" type="text" class="form-control" placeholder="Enter your email">
             <p class="p3">Password</p>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Enter you password">
+              <input [(ngModel)]="user.password" type="text" class="form-control" placeholder="Enter you password">
               <button class="btn btn-password" type="button" id="button-addon2"><i class="bi bi-eye"></i></button>
             </div>
           </div>
@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="d-grid gap-2 col-12 mt-3">
-            <button class="btn btn-green" type="button">Sign in</button>
+            <button class="btn btn-green" type="button" (click)="login(user)">Sign in</button>
             <button class="btn btn-google " type="button">
               <div class="globalCenterCenter">
                 <img class="i1" src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png">
